@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Grid Template Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		* {
+			box-sizing: 	border-box;
+		}
+
+		.col-01 {width:   8.33%; border:4px solid white;}
+		.col-02 {width:  16.66%; border:4px solid white;}
+		.col-03 {width:  25.00%; border:4px solid white;}
+		.col-04 {width:  33.33%; border:4px solid white;}
+		.col-05 {width:  41.66%; border:4px solid white;}
+		.col-06 {width:  50.00%; border:4px solid white;}
+		.col-07 {width:  58.33%; border:4px solid white;}
+		.col-08 {width:  66.66%; border:4px solid white;}
+		.col-09 {width:  75.00%; border:4px solid white;}
+		.col-10 {width:  83.33%; border:4px solid white;}
+		.col-11 {width:  91.66%; border:4px solid white;}
+		.col-12 {width: 100.00%; border:4px solid white;}
+
+		[class*="col-"] {
+			float: left;
+			padding: 2%;
+			font-family: sans-serif;
+			color: white;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+
+		.red {background-color: red; height: auto;}
+		.blue {background-color: blue; height:auto;}
+
+	</style>
+</head>
+<body>
+	<!-- Header row - spans all twelve columns -->
+	<div class="row">
+		<div class="col-09 blue"; ><h1>Chicago Cubs</h1></div>	
+		<div class ="col-03 blue"><img src="CcLogo.png" alt="Chicago Cubs" height="76"></div>
+	</div>
+
+
+	<!-- Menu and Subhead row - adds to twelve columns -->
+	<div class="row">
+		<div class="col-02 red" >
+			<p>Menu</p> <p>Menu</p> <p>Menu</p>
+			<p>Menu</p> <p>Menu</p> <p>Menu</p>
+		</div>
+		<div class="col-10 red">
+			<h2>My Favorite Team</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, saepe, harum. Architecto quisquam asperiores corporis fugiat, repellendus sunt, maiores deserunt esse sed atque maxime alias totam est iste molestias quaerat? Illo consequuntur possimus laudantium magni ipsum odit cupiditate nisi similique tempore necessitatibus officia quaerat provident, voluptatibus accusamus tenetur. Illo laudantium, magni maiores assumenda distinctio ratione est voluptates veritatis suscipit. Sit.</p>
+		</div>
+	</div>
+	
+	<!-- Footer row - spans all twelve columns -->
+	<div class="row">
+		<div class="col-12 blue" style="text-align: right">
+		<p>Naramsin Marokeel</p>
+	</div>
+	</div>
+</body>
+</html>
